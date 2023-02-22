@@ -28,3 +28,17 @@ Váriavel de forma resumida, é uma forma de armazenar em memória um determinad
 Possuem a mesma funcionalidade e funções que uma variável, diferente de uma variável, uma constante somente pode ter seu valor definido uma única vez.
 
 ### Imutabilidade
+
+
+## Let e Escopo
+
+### Let
+Let é assim como const, outra forma de definir uma variável, diferente da constante, o let permite que tenha seu valor reatribuido.
+
+### var x const x let
+
+Tanto var e a let permitem que seus valores sejam reatribuidos, o que muda de uma variável para outra é que tanto a let quanto a const diferente da var, possuem um escopo, global, local e de bloco, enquanto a var possui um escopo global ou local.
+
+### Escopo
+Escopo é o nível de acesso de uma variável, var, let e const possuem escopo, global, local. let e const possuem um terceiro escopo, o bloco, que é iniciado e terminado com o simbolo "{}".
+Ou seja, if, else, for.
