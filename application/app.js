@@ -55,4 +55,29 @@ function subtração(a, b){
 //     console.log(a - b)
 //   }
 // }
-  
+
+
+const nome = 'Paulosan'
+
+const classe = 'Mago'
+
+const specialization = 'Arcano'
+
+const race = 'Humano'
+
+const player = {
+  nome: nome,
+  classe: classe,
+  specialization: specialization,
+  race: race
+}
+
+const newPlayer = {
+  nome,
+  classe,
+  specialization,
+  race
+}
+
+console.log(player)
+console.log(newPlayer)
