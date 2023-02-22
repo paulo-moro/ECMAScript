@@ -81,3 +81,19 @@ const newPlayer = {
 
 console.log(player)
 console.log(newPlayer)
+
+
+///Spread
+
+const monterName = 'Slime'
+const level = 12
+const atack = 5
+const defense = 5
+const resistence = 5
+const monster = {
+  name: monterName,
+  level,
+  atack,
+  defense,
+  resistence
+}
