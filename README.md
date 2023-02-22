@@ -42,3 +42,12 @@ Tanto var e a let permitem que seus valores sejam reatribuidos, o que muda de um
 ### Escopo
 Escopo é o nível de acesso de uma variável, var, let e const possuem escopo, global, local. let e const possuem um terceiro escopo, o bloco, que é iniciado e terminado com o simbolo "{}".
 Ou seja, if, else, for.
+
+
+## Parâmetros opcionais
+
+Ao declarar uma função é possível declarar parâmetros para ela, para definir um parâmetro como opcional basta, adicionar um valor padrão para esse parâmetro quando eles são definidos na função.
+
+### Regras de parâmetros opcionais
+
+Parâmetros opcionais devem ser os ultimos parâmetros definidos em sua função.
