@@ -218,3 +218,11 @@ const resultado = soma2(2, 3)
 console.log(resultado)
 ```
 ### Callbacks
+
+
+## Find
+No ECMA 6 foi incluido o método Find , útil para encontrar um registro dentro de um array.
+
+```
+
+```
