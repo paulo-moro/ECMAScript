@@ -179,4 +179,42 @@ const {nome, classe , race, specialization} = newPlayer2
 console.log(`Player name: ${nome} race ${race}, class ${classe} with specialization ${specialization}.`)
 ```
 
+## Arrow Function
 
+São uma forma facil de declarar uma nova função, as arrow functions são outra forma de declarar uma função sem ser da forma convencional que é a partir da palavra reservada function.
+
+```
+function soma (a, b){
+  console.log(a + b)
+}
+
+console.log('resultado soma função declarada fora de variável: ',soma(1,2))
+
+const somaConst = function (a, b){
+  console.log(a + b)
+}
+console.log('resultado soma função dentro da variável: ', somaConst(1,2))
+(a, b) => {
+  console.log(a + b)
+} **** esse caso é somente utilizável em caso de callbacks
+const somaArrow = () => {
+  console.log(a + b)
+}
+console.log('resultado soma arrow function salva dentro de variável: ',somaArrow(1,2))
+
+const printNum = a =>{
+  console.log(a)
+} /// quando há somente um parâmetro não é necessário declarar os parâmetros entre parenteses.
+console.log('console.log de arrow function com um unico parametro: ', printNum(20))
+
+const printNumResumida = a => console.log(a) /// se a função apenas tem uma linha pode ser resumida dessa forma 
+```
+### Retornos
+
+Em funções quando quero que um valor seja retornado eu declaro o retorno após a palavra reservada return. Em arrow function além do return é possivel omitir o return se a função apenas tiver uma linha
+```
+const soma2 = (a, b) => a + b
+const resultado = soma2(2, 3)
+console.log(resultado)
+```
+### Callbacks
