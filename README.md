@@ -207,20 +207,38 @@ const printNum = a =>{
 } /// quando há somente um parâmetro não é necessário declarar os parâmetros entre parenteses.
 console.log('console.log de arrow function com um unico parametro: ', printNum(20))
 
-const printNumResumida = a => console.log(a) /// se a função apenas tem uma linha pode ser resumida dessa forma 
+const printNumResumida = a => console.log(a) /// se a função apenas tem uma linha pode ser resumida dessa forma
 ```
+
 ### Retornos
 
 Em funções quando quero que um valor seja retornado eu declaro o retorno após a palavra reservada return. Em arrow function além do return é possivel omitir o return se a função apenas tiver uma linha
+
 ```
 const soma2 = (a, b) => a + b
 const resultado = soma2(2, 3)
 console.log(resultado)
 ```
+
 ### Callbacks
 
+Uma função callback é uma função passada a outra função como argumento, que é então invocado dentro da função externa para completar algum tipo de rotina ou ação. (MDN)
+
+```
+function greeting(name) {
+  alert('Olá ' + name);
+}
+
+function processUserInput(callback) {
+  var name = prompt('Por favor insira seu nome.');
+  callback(name);
+}
+
+processUserInput(greeting);
+```
 
 ## Find
+
 No ECMA 6 foi incluido o método Find , útil para encontrar um registro dentro de um array.
 
 ```
@@ -279,4 +297,4 @@ console.log(`${hello} ${world}!`)// com Template Literals
 
 ```
 
-Ao declarar o template literals vc 'envolve'  a string que será criada com a crase " ` " ( o acento agudo ao contrario), dentro dela vc pode declarar as variáveis dentro dos ${} e fora com a string que vc for adicionar.
+Ao declarar o template literals vc 'envolve' a string que será criada com a crase " ` " ( o acento agudo ao contrario), dentro dela vc pode declarar as variáveis dentro dos ${} e fora com a string que vc for adicionar.
