@@ -1,5 +1,5 @@
 
-///Desestruturação
+//Desestruturação
 
 const newPlayer2= {
   nome: 'Vessana',
@@ -11,3 +11,4 @@ const newPlayer2= {
 const {nome, classe , race, specialization} = newPlayer2
 
 console.log(`Player name: ${nome} race ${race}, class ${classe} with specialization ${specialization}.`)
+
