@@ -57,30 +57,30 @@ function subtração(a, b){
 // }
 
 
-const nome = 'Paulosan'
+// const nome = 'Paulosan'
 
-const classe = 'Mago'
+// const classe = 'Mago'
 
-const specialization = 'Arcano'
+// const specialization = 'Arcano'
 
-const race = 'Humano'
+// const race = 'Humano'
 
-const player = {
-  nome: nome,
-  classe: classe,
-  specialization: specialization,
-  race: race
-}
-console.log('Jogador criado da forma convencional: ', player)
+// const player = {
+//   nome: nome,
+//   classe: classe,
+//   specialization: specialization,
+//   race: race
+// }
+// console.log('Jogador criado da forma convencional: ', player)
 
-const newPlayer = {
-  nome,
-  classe,
-  specialization,
-  race
-}
+// const newPlayer = {
+//   nome,
+//   classe,
+//   specialization,
+//   race
+// }
 
-console.log('Jogador criado com JSON encurtado: ', newPlayer)
+// console.log('Jogador criado com JSON encurtado: ', newPlayer)
 
 
 ///Spread
@@ -111,3 +111,17 @@ const spreadCopy = {
   ...slime, ...slimeVermelho
 }
 console.log('Spread slime: ',spreadCopy)
+
+
+///Desestruturação
+
+const newPlayer2= {
+  nome: 'Vessana',
+  classe: 'Sacerdote',
+  specialization: 'Sagrado',
+  race: 'Elfo Noturno'
+}
+
+const {nome, classe , race, specialization} = newPlayer2
+
+console.log(`Player name: ${nome} race ${race}, class ${classe} with specialization ${specialization}.`)
