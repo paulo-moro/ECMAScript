@@ -8,7 +8,7 @@ const newPlayer2= {
   race: 'Elfo Noturno'
 }
 
-const {nome, classe , race, specialization} = newPlayer2
+// const {nome, classe , race, specialization} = newPlayer2
 
-console.log(`Player name: ${nome} race ${race}, class ${classe} with specialization ${specialization}.`)
+// console.log(`Player name: ${nome} race ${race}, class ${classe} with specialization ${specialization}.`)
 
