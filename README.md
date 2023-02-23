@@ -26,5 +26,3 @@ Váriavel de forma resumida, é uma forma de armazenar em memória um determinad
 ### Variável vs Constantes
 
 Possuem a mesma funcionalidade e funções que uma variável, diferente de uma variável, uma constante somente pode ter seu valor definido uma única vez.
-
-### Imutabilidade
