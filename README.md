@@ -263,3 +263,20 @@ console.log('Mages are here: ', allMages) // filter retorna um array
 console.log('Frost Mage is here: ', findFrostMage) // operadores logicos podem ser utilizados no retorno do find para aumentar a complexidade da procura
 console.log('Da Shadow Troll is here: ', findShadowPriest)// outros metodos de string e array podem ser combinados com operadores logicos para encontrar algum item especifico, além disso nesse exemplo adicionamos alguns assuntos tratados anteriormente.
 ```
+
+## Template Literals
+
+Template literals é uma forma mais simplificada de concatenar variáveis com strings, de uma forma mais prática é possivel criar strings personalizadas a partir de variáveis. Exemplo:
+
+```
+const hello ='Olá'
+
+const world = 'Mundo'
+
+console.log(hello+' '+world+'!')  // sem Template Literals
+
+console.log(`${hello} ${world}!`)// com Template Literals
+
+```
+
+Ao declarar o template literals vc 'envolve'  a string que será criada com a crase " ` " ( o acento agudo ao contrario), dentro dela vc pode declarar as variáveis dentro dos ${} e fora com a string que vc for adicionar.
