@@ -16,7 +16,7 @@ function subtração(a, b = 0){
   console.log(a - b)
 }
 
-function subtração(a,b, inverter = false){
+function subtraçãoInv(a,b, inverter = false){
   if(inverter){
     console.log(b - a)
   } else {
