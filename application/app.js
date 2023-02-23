@@ -15,15 +15,15 @@ const slimeVermelho = {
   resistence: 8
 }
 console.log('Slime vermelho: ',slimeVermelho)
-const formaAntigaCopy = {
-  name: slime.name,
-  level: slimeVermelho.level,
-  defense: slimeVermelho.defense,
-  resistence: slimeVermelho.resistence
-}
-console.log('copy slime: ',formaAntigaCopy)
-const spreadCopy = {
-  ...slime, ...slimeVermelho
-}
-console.log('Spread slime: ',spreadCopy)
+// const formaAntigaCopy = {
+//   name: slime.name,
+//   level: slimeVermelho.level,
+//   defense: slimeVermelho.defense,
+//   resistence: slimeVermelho.resistence
+// }
+// console.log('copy slime: ',formaAntigaCopy)
+// const spreadCopy = {
+//   ...slime, ...slimeVermelho
+// }
+// console.log('Spread slime: ',spreadCopy)
 
