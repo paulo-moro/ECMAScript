@@ -71,6 +71,7 @@ const player = {
   specialization: specialization,
   race: race
 }
+console.log('Jogador criado da forma convencional: ', player)
 
 const newPlayer = {
   nome,
@@ -79,21 +80,34 @@ const newPlayer = {
   race
 }
 
-console.log(player)
-console.log(newPlayer)
+console.log('Jogador criado com JSON encurtado: ', newPlayer)
 
 
 ///Spread
 
-const monterName = 'Slime'
-const level = 12
-const atack = 5
-const defense = 5
-const resistence = 5
-const monster = {
-  name: monterName,
-  level,
-  atack,
-  defense,
-  resistence
+const slime = {
+  name: 'Slime',
+  level: 12,
+  atack: 5,
+  defense: 5,
+  resistence: 5
 }
+console.log('slime normal: ',slime)
+const slimeVermelho = {
+  level:15,
+  atack: 8,
+  defense: 8,
+  resistence: 8
+}
+console.log('Slime vermelho: ',slimeVermelho)
+const formaAntigaCopy = {
+  name: slime.name,
+  level: slimeVermelho.level,
+  defense: slimeVermelho.defense,
+  resistence: slimeVermelho.resistence
+}
+console.log('copy slime: ',formaAntigaCopy)
+const spreadCopy = {
+  ...slime, ...slimeVermelho
+}
+console.log('Spread slime: ',spreadCopy)

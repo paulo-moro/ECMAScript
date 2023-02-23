@@ -26,6 +26,7 @@ Váriavel de forma resumida, é uma forma de armazenar em memória um determinad
 ### Variável vs Constantes
 
 Possuem a mesma funcionalidade e funções que uma variável, diferente de uma variável, uma constante somente pode ter seu valor definido uma única vez.
+
 ```
 const newConst = 'constValue'
 
@@ -117,13 +118,15 @@ const player = {
  specialization: specialization,
  race: race
 }
-
+console.log('Jogador criado da forma convencional: ', player)
 const newPlayer = {
  nome,
  classe,
  specialization,
  race
 }
+
+console.log('Jogador criado com JSON encurtado: ', newPlayer)
 ```
 
 ## Spread
@@ -131,5 +134,30 @@ const newPlayer = {
 O operador spread é utilizado para copiar os campos de um objeto e em seguida colar em um novo objeto.
 
 ```
-
+const slime = {
+  name: 'Slime',
+  level: 12,
+  atack: 5,
+  defense: 5,
+  resistence: 5
+}
+console.log('slime normal: ',slime)
+const slimeVermelho = {
+  level:15,
+  atack: 8,
+  defense: 8,
+  resistence: 8
+}
+console.log('Slime vermelho: ',slimeVermelho)
+const formaAntigaCopy = {
+  name: slime.name,
+  level: slimeVermelho.level,
+  defense: slimeVermelho.defense,
+  resistence: slimeVermelho.resistence
+}
+console.log('copy slime: ',formaAntigaCopy)
+const spreadCopy = {
+  ...slime, ...slimeVermelho
+}
+console.log('Spread slime: ',spreadCopy)
 ```
