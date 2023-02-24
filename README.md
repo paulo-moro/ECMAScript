@@ -15,7 +15,6 @@ Nessas aulas falaremos dos seguintes tópicos:
 - Arrow function
 - Find
 - Templates Literais
-- Clean Code Javascipt
 
 ## Desestuturação
 
